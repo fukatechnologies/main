@@ -23,7 +23,7 @@ The algorithm optimizes the operation of chillers based on few criterias;
 | ------------------ | -------------------------------------------- | ------- |
 | CHILLER ON/OFF     | Get/ Set state of Chiller                    | OFF     |
 | UPPER_LIMIT        | Set high value for optimization              | 90      |
-| CWR_TEMP_HIGHPOINT | Set the high temperature for 'Recovery State | 9.0     |
+| CWR_TEMP_HIGHPOINT | Set the high temperature for 'Recovery State' | 9.0     |
 
 ## Information parameters
 | Name            | Description                                                                                                                                        |
