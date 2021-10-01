@@ -19,15 +19,15 @@ The algorithm optimizes the operation of chillers based on few criterias;
 4. Given in 'Recovery State', When `CHWR °C` < `CHWR °C SP` AND after `10` optimization cycles, Then system will resume normal 'Optimization State'.
 
 ## Configurable parameters
-| Name               | Use                                          | Default |
-| ------------------ | -------------------------------------------- | ------- |
-| CHILLER ON/OFF     | Get/ Set state of Chiller                    | OFF     |
-| UPPER_LIMIT        | Set high value for optimization              | 90      |
+| Name               | Use                                           | Default |
+| ------------------ | --------------------------------------------- | ------- |
+| CHILLER ON/OFF     | Get/ Set state of Chiller                     | OFF     |
+| UPPER_LIMIT        | Set high value for optimization               | 90      |
 | CWR_TEMP_HIGHPOINT | Set the high temperature for 'Recovery State' | 9.0     |
 
 ## Information parameters
-| Name            | Description                                                                                                                                        |
-| --------------- | -------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Name            | Description                                                                                                                                            |
+| --------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | PRIMARY_CHILLER | Usually indicates the last running chiller unit which has been switched off. It serve as reference to the next longest running unit which is after it. |
-| RUNNING_UNIT    | Indicate units that is not in Standby mode.                                                                                                        |
-| EXPECTED_UNIT   | Indicate units that was expectd through auto-optimize algorithm.                                                                                   |
+| RUNNING_UNIT    | Indicate current running units AND not in Standby mode.                                                                                                            |
+| EXPECTED_UNIT   | Expected units computed through auto-optimize algorithm.                                                                                               |
